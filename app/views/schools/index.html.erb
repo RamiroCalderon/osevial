@@ -1,1 +1,9 @@
-<h1>Vas bien Ramy!</h1>
+<h1>Campus </h1>
+
+<ul>
+  <% @schools.each do |school| %>
+    <li>
+      <%= school.name %>
+    </li>
+  <% end %>
+</ul>
