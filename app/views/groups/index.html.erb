@@ -1,0 +1,10 @@
+<h1>Grupos </h1>
+
+<<ul>
+    <% @groups.each do |group| %>
+        <li>
+            <a href="<%= group_path(group) %>">
+            <%= group.name %>
+         </li>
+    <% end %>
+</ul>

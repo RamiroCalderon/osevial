@@ -5,11 +5,14 @@ class SchoolsController < ApplicationController
 
   def show
     @school = School.find(params[:id])
+    
   end
 
+  
   def new
     @school = School.new
   end
+
 
   def create
     @school = School.new(school_params)

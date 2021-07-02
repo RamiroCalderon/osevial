@@ -1,2 +1,18 @@
 <h1><%= @school.name %></h1>
 
+
+<h2>Grupos</h2>
+
+<% @school.groups.each do |group| %>
+  <p>
+  <a href="<%= group_path(group) %>">
+  <%= group.name %>
+  </p>
+
+
+  </p>
+<% end %>
+
+
+
+

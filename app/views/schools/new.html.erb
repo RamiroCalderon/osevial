@@ -1,13 +1,3 @@
 <h1>Crea un Campus Nuevo</h1>
 
-<%= form_with model: @school do |form| %>
-  <div>
-    <%= form.label :name %><br>
-    <%= form.text_field :name %>
-  </div>
-
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+<%= render "form", school: @school %>

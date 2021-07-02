@@ -1,0 +1,21 @@
+<%= form_with model: group do |form| %>
+    <div>
+      <%= form.label :name %><br>
+      <%= form.text_field :name %>
+      <% group.errors.full_messages_for(:title).each do |message| %>
+        <div><%= message %></div>
+      <% end %>
+    </div>
+
+    <div>
+    <%= form.label :school %><br>
+    <%= form.text_area :school%><br>
+    <% group.errors.full_messages_for(:body).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
