@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'groups/index'
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  
   root 'schools#index'
   resources :schools
   resources :groups
